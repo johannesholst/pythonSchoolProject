@@ -1,14 +1,32 @@
 import pygame
 
-(width, height) = 1000, 800
-screen = pygame.display.set_mode((width, height))
+SCREEN_SIZE = WIDTH, HEIGHT = (900, 720)
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 50, 50)
+GREEN = (50, 255, 50)
+CIRCLE_RADIUS = 30
+
+screen = pygame.display.set_mode(SCREEN_SIZE)
 
 pygame.display.set_caption("Battle Sim")
 
-background_colour = (255, 255, 255)
+background_colour = WHITE
 screen.fill(background_colour)
 
 pygame.display.flip()
+
+
+def combat():
+    from soldier import infantry
+    from soldier import cavalry
+
+    print(infantry.morale)
+
+    print(cavalry.morale)
+combat()
+
+
 
 
 running = True
@@ -16,3 +34,4 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+
