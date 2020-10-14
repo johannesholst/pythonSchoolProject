@@ -19,11 +19,8 @@ pygame.display.flip()
 
 def combat():
     from soldier import infantry
-    from soldier import cavalry
 
     print(infantry.morale)
-
-    print(cavalry.morale)
 combat()
 
 
