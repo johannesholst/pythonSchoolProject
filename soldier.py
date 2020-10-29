@@ -5,11 +5,10 @@ class Soldier:
         self.shock = shock
         self.size = size
 
-infantry = Soldier(10, 2, 4, 1000)
+infantry = Soldier(1000, 3, 5, 1000)
 
 
 class SoldierAI(Soldier):
     pass
 
-infantryAI = SoldierAI(10, 2, 4, 1000)
-
+infantryAI = SoldierAI(1000, 3, 5, 1000)
